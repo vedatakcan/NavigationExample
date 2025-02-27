@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.vedatakcan.navigationexample.ui.HomeFragment"
+        android:label="Home Fragment"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.vedatakcan.navigationexample.ui.DetailFragment"
+        android:label="Detail Fragment"
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="message"
+            app:argType="string"
+            android:defaultValue="Varsayılan Mesaj"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.vedatakcan.navigationexample.ui.ProfileFragment"
+        android:label="Profile Fragment"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.vedatakcan.navigationexample.ui.SettingsFragment"
+        android:label="Settings Fragment"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.vedatakcan.navigationexample.ui.NotificationsFragment"
+        android:label="Notifications Fragment"
+        tools:layout="@layout/fragment_notifications" />
+</navigation>
