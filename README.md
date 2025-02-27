@@ -21,5 +21,6 @@ This is a sample Android project demonstrating the use of **Jetpack Navigation**
 
 ## 🔧 Setup & Installation  
 1. Clone the repository  
-```bash
+   ```bash
+   git clone https://github.com/vedatakcan/NavigationExample.git
 
